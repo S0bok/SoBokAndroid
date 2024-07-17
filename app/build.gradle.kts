@@ -39,6 +39,19 @@ android {
 }
 
 dependencies {
+    implementation("com.aallam.openai:openai-client:3.0.0")
+    implementation("io.ktor:ktor-client-android:2.2.4")
+
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.google.code.gson:gson:2.8.6")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.okhttp3:okhttp-urlconnection:4.9.1")
+
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    implementation("com.google.android.material:material:1.4.0")
+    implementation("androidx.core:core-ktx:1.6.0")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
