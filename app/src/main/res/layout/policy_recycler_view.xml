@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/policy_recycler_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/solid_15" />
+
+            <TextView
+                android:id="@+id/policy_recycler_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="저소득층 및 소외계층 난방연료 지원"
+                android:textSize="18dp"
+                android:fontFamily="@font/pretendard_semibold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"/>
+
+            <ImageView
+                android:id="@+id/area_ic"
+                android:layout_width="16dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_area"
+                app:layout_constraintStart_toStartOf="@id/policy_recycler_text"
+                app:layout_constraintTop_toBottomOf="@id/policy_recycler_text"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/area_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="대구광역시"
+                android:textSize="15dp"
+                android:textColor="@color/gray"
+                android:fontFamily="@font/pretendard_medium"
+                app:layout_constraintTop_toTopOf="@id/area_ic"
+                app:layout_constraintBottom_toBottomOf="@id/area_ic"
+                app:layout_constraintStart_toEndOf="@id/area_ic"
+                android:layout_marginStart="10dp"/>
+
+            <ImageView
+                android:id="@+id/date_ic"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@drawable/ic_date"
+                app:layout_constraintStart_toStartOf="@id/policy_recycler_text"
+                app:layout_constraintTop_toBottomOf="@id/area_ic"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/date_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="신청 기간"
+                android:textSize="15dp"
+                android:textColor="@color/gray"
+                android:fontFamily="@font/pretendard_medium"
+                app:layout_constraintTop_toTopOf="@id/date_ic"
+                app:layout_constraintBottom_toBottomOf="@id/date_ic"
+                app:layout_constraintStart_toEndOf="@id/date_ic"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="매년 7월 ~ 12월"
+                android:textSize="12dp"
+                android:textColor="@color/orange"
+                android:fontFamily="@font/pretendard_light"
+                app:layout_constraintTop_toTopOf="@id/date_ic"
+                app:layout_constraintBottom_toBottomOf="@id/date_ic"
+                app:layout_constraintStart_toEndOf="@id/date_title"
+                android:layout_marginStart="10dp"/>
+
+            <ImageView
+                android:id="@+id/people_ic"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@drawable/ic_people"
+                app:layout_constraintStart_toStartOf="@id/policy_recycler_text"
+                app:layout_constraintTop_toBottomOf="@id/date_ic"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/people_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="지원 대상"
+                android:textSize="15dp"
+                android:textColor="@color/gray"
+                android:fontFamily="@font/pretendard_medium"
+                app:layout_constraintTop_toTopOf="@id/people_ic"
+                app:layout_constraintBottom_toBottomOf="@id/people_ic"
+                app:layout_constraintStart_toEndOf="@id/people_ic"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/people_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#저소득층"
+                android:textSize="12dp"
+                android:textColor="@color/orange"
+                android:fontFamily="@font/pretendard_light"
+                app:layout_constraintTop_toTopOf="@id/people_ic"
+                app:layout_constraintBottom_toBottomOf="@id/people_ic"
+                app:layout_constraintStart_toEndOf="@id/people_title"
+                android:layout_marginStart="10dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

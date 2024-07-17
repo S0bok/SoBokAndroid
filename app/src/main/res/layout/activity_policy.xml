@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PolicyActivity">
+
+    <ImageView
+        android:id="@+id/logo_img"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:background="@drawable/sobok_logo"
+        android:layout_margin="20dp"/>
+
+    <HorizontalScrollView
+        android:id="@+id/category_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_img"
+        android:scrollbars="none"
+        android:layout_marginStart="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn1"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:text="다자녀"
+                android:textSize="12dp"
+                android:fontFamily="@font/pretendard_regular"
+                android:background="@drawable/button_background"
+                android:textColor="@drawable/button_text_color"
+                android:layout_marginEnd="5dp"
+                android:padding="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn2"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:text="저소득층"
+                android:textSize="12dp"
+                android:fontFamily="@font/pretendard_regular"
+                android:background="@drawable/button_background"
+                android:textColor="@drawable/button_text_color"
+                android:layout_marginEnd="5dp"
+                android:padding="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn3"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:text="한부모"
+                android:textSize="12dp"
+                android:fontFamily="@font/pretendard_regular"
+                android:background="@drawable/button_background"
+                android:textColor="@drawable/button_text_color"
+                android:layout_marginEnd="5dp"
+                android:padding="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn4"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:text="고령층"
+                android:textSize="12dp"
+                android:fontFamily="@font/pretendard_regular"
+                android:background="@drawable/button_background"
+                android:textColor="@drawable/button_text_color"
+                android:layout_marginEnd="5dp"
+                android:padding="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn5"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:text="장애인"
+                android:textSize="12dp"
+                android:fontFamily="@font/pretendard_regular"
+                android:background="@drawable/button_background"
+                android:textColor="@drawable/button_text_color"
+                android:layout_marginEnd="5dp"
+                android:padding="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn6"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:text="다문화"
+                android:textSize="12dp"
+                android:fontFamily="@font/pretendard_regular"
+                android:background="@drawable/button_background"
+                android:textColor="@drawable/button_text_color"
+                android:layout_marginEnd="5dp"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/category_scroll"
+        android:layout_marginTop="5dp"
+        tools:listitem="@layout/policy_recycler_view"
+        android:nestedScrollingEnabled="true"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@drawable/bottom_nav_color"
+        app:itemTextColor="@drawable/bottom_nav_color"
+        app:menu="@menu/bottom_nav"/>
+
+</RelativeLayout>
