@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/guide_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="온라인으로 제출서류 발급받는 방법"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:fontFamily="@font/pretendard_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/guide_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="정부 24를 통해 제출서류를 온라인으로 간편하게 받아보세요!"
+        android:textColor="@color/dark_gray"
+        android:textSize="12dp"
+        android:fontFamily="@font/pretendard_regular"
+        app:layout_constraintStart_toStartOf="@id/guide_title"
+        app:layout_constraintTop_toBottomOf="@id/guide_title"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/guide_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2024.07.17"
+        android:textColor="@color/dark_gray"
+        android:textSize="12dp"
+        android:fontFamily="@font/pretendard_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guide_detail"
+        android:layout_marginEnd="20dp"/>
+
+    <ImageView
+        android:id="@+id/recycler_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        app:layout_constraintTop_toBottomOf="@id/guide_date"
+        android:layout_marginTop="10dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
